@@ -30,11 +30,12 @@ function all(n) {
 
 for (let i = 0; i < max; i++) {
     const name = faker.internet.userName();
+    const pass = faker.internet.password();
 
     // console.log(`Name: ${name}`)
 
     o = o + 1;
-    if (o == parseInt(all('50 000'))) {
+    if (o == parseInt(all('10 000'))) {
         console.log(`Progress: ${Math.round( ( i / max ) *100)}%`)
 
         content += '\n';
@@ -46,7 +47,7 @@ for (let i = 0; i < max; i++) {
         o = 0;
     }
 
-    content += `${name}\n`
+    content += `${name}:${pass} \n`
 }
 
 var End = Date.now();

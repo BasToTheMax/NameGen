@@ -33,7 +33,7 @@ for (let i = 0; i < max; i++) {
 content += '\n';
 fs.appendFileSync('./names/'+fn+'.txt', content);
 var End = Date.now();
-var T = Math.round(End-Start/1000);
+var T = Math.round( (End - Start) / 1000);
 console.log(`Took: ${T}s`);
 setInterval(() => {
     // nothing lol

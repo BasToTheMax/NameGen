@@ -1,13 +1,31 @@
-const req = require("unique-username-generator");
+const { faker } = require('@faker-js/faker');
 const fs = require('fs');
 
-var content;
-content = '';
+var fn;
+fn = 'names-' + Date.now();
 
-const max = 10;
+var c;
+var o;
+c = 0;
+o = 0;
+
+var content;
+content = ``;
+
+const max = 100000;
+
 for (let i = 0; i < max; i++) {
-    const name = req.generateUsername();
+    const name = faker.internet.userName();
+
+    // console.log(`Name: ${name}`)
+
+    o = o + 1;
+    if (o == 1000) {
+        console.log(`Progress: ${Math.round( ( i / max ) *100)}%`)
+        o = 0;
+    }
+
     content += `${name}\n`
 }
 content += '\n';
-fs.appendFileSync('./names/main.txt', content)
+fs.appendFileSync('./names/'+fn+'.txt', content)

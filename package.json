@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/BasToTheMax/NameGen#readme",
   "dependencies": {
-    "@faker-js/faker": "^7.6.0",
-    "unique-username-generator": "^1.1.1"
+    "@faker-js/faker": "^7.6.0"
   }
 }

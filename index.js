@@ -1,3 +1,5 @@
+console.clear();
+console.log('Welcome!');
 const { faker } = require('@faker-js/faker');
 const fs = require('fs');
 
@@ -29,7 +31,7 @@ for (let i = 0; i < max; i++) {
     // console.log(`Name: ${name}`)
 
     o = o + 1;
-    if (o == 1000) {
+    if (o == parseInt(all('50 000'))) {
         console.log(`Progress: ${Math.round( ( i / max ) *100)}%`)
         o = 0;
     }

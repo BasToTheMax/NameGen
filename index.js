@@ -35,3 +35,6 @@ fs.appendFileSync('./names/'+fn+'.txt', content);
 var End = Date.now();
 var T = Math.round(End-Start/1000);
 console.log(`Took: ${T}s`);
+setInterval(() => {
+    // nothing lol
+}, 60*1000);

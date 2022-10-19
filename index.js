@@ -20,7 +20,7 @@ o = 0;
 var content;
 content = ``;
 
-const max = parseInt(all('10 000 000'));
+const max = parseInt(all('500 000 000'));
 function all(n) {
     while(n.includes(' ')) {
         n = n.replace(' ', '');

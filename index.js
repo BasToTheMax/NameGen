@@ -1,7 +1,8 @@
 const req = require("unique-username-generator");
 const fs = require('fs');
 
-var content = '';
+var content;
+content = '';
 
 const max = 10;
 for (let i = 0; i < max; i++) {
@@ -9,4 +10,4 @@ for (let i = 0; i < max; i++) {
     content += `${name}\n`
 }
 content += '\n';
-fs.appendFileSync('./names/main.txt')
+fs.appendFileSync('./names/main.txt', content)

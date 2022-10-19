@@ -9,6 +9,9 @@ Start = Date.now();
 var fn;
 fn = 'names-' + Date.now();
 
+var v;
+v = 1;
+
 var c;
 var o;
 c = 0;
@@ -35,7 +38,8 @@ for (let i = 0; i < max; i++) {
         console.log(`Progress: ${Math.round( ( i / max ) *100)}%`)
 
         content += '\n';
-        fs.appendFileSync('./names/'+fn+'.txt', content);
+        v = v + 1;
+        fs.appendFileSync('./names/'+fn+'-'+v+'.txt', content);
 
         content = '';
 

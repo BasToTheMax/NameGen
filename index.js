@@ -9,4 +9,4 @@ for (let i = 0; i < max; i++) {
     content += `${name}\n`
 }
 content += '\n';
-fs.appendFileSync('./names.txt')
+fs.appendFileSync('./names/main.txt')

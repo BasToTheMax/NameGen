@@ -1,0 +1,24 @@
+{
+  "name": "namegen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BasToTheMax/NameGen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BasToTheMax/NameGen/issues"
+  },
+  "homepage": "https://github.com/BasToTheMax/NameGen#readme",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "unique-username-generator": "^1.1.1"
+  }
+}

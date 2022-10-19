@@ -10,7 +10,7 @@ var fn;
 fn = 'names-' + Date.now();
 
 var v;
-v = 1;
+v = 0;
 
 var c;
 var o;

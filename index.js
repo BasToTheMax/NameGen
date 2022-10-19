@@ -47,7 +47,7 @@ for (let i = 0; i < max; i++) {
         o = 0;
     }
 
-    content += `${name}:${pass} \n`
+    content += `${name} - ${pass} \n`
 }
 
 var End = Date.now();

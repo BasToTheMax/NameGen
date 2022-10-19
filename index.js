@@ -15,7 +15,13 @@ o = 0;
 var content;
 content = ``;
 
-const max = 100000;
+const max = parseInt(all('10 000 000'));
+function all(n) {
+    while(n.includes(' ')) {
+        n = n.replace(' ', '');
+    }
+    return n;
+}
 
 for (let i = 0; i < max; i++) {
     const name = faker.internet.userName();

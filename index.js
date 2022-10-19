@@ -33,13 +33,18 @@ for (let i = 0; i < max; i++) {
     o = o + 1;
     if (o == parseInt(all('50 000'))) {
         console.log(`Progress: ${Math.round( ( i / max ) *100)}%`)
+
+        content += '\n';
+        fs.appendFileSync('./names/'+fn+'.txt', content);
+
+        content = '';
+
         o = 0;
     }
 
     content += `${name}\n`
 }
-content += '\n';
-fs.appendFileSync('./names/'+fn+'.txt', content);
+
 var End = Date.now();
 var T = Math.round( (End - Start) / 1000);
 console.log(`Took: ${T}s`);
